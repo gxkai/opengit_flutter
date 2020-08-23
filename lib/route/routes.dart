@@ -52,12 +52,24 @@ class AppRoutes {
   static final edit_profile = '/main/edit/profile';
   static final edit_issue_comment = '/main/edit/comment';
   static final edit_issue_reaction = '/main/edit/reaction';
+  static final demo = '/demo';
+  static final canvas_demo = '/canvas_demo';
 
   static void configureRoutes(Router router) {
     router.notFoundHandler = Handler(
         handlerFunc: (BuildContext context, Map<String, List<String>> params) {
       print('ROUTE WAS NOT FOUND !!!');
     });
+    router.define(
+      demo,
+      handler: demoHandler,
+      transitionType: TransitionType.cupertino,
+    );
+    router.define(
+      canvas_demo,
+      handler: canvasDemoHandler,
+      transitionType: TransitionType.cupertino,
+    );
     router.define(
       splash,
       handler: splashHandler,

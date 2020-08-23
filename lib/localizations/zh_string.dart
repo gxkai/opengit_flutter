@@ -2,6 +2,9 @@ import 'app_base_string.dart';
 
 class ZhString extends AppBaseString {
   @override
+  String get demo => "demo";
+
+  @override
   String get trend => "趋势";
 
   @override

@@ -2,6 +2,9 @@ import 'app_base_string.dart';
 
 class EnString extends AppBaseString {
   @override
+  String get demo => "demo";
+
+  @override
   String get trend => "Trend";
 
   @override

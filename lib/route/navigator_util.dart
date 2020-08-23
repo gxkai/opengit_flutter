@@ -22,6 +22,16 @@ import 'package:open_git/ui/page/profile/user_profile_new_page.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class NavigatorUtil {
+  //Demo
+  static goDemo(BuildContext context) {
+    Application.router.navigateTo(context, AppRoutes.demo);
+  }
+
+  //CanvasDemo
+  static goCanvasDemo(BuildContext context) {
+    Application.router.navigateTo(context, AppRoutes.canvas_demo);
+  }
+
   //主页
   static goMain(BuildContext context) {
     Application.router.navigateTo(context, AppRoutes.main, replace: true);

@@ -1,4 +1,5 @@
 abstract class AppBaseString {
+  String demo;
   String trend;
   String bookmark;
   String setting;

@@ -90,9 +90,9 @@ Map<String, dynamic> _$RepositoryToJson(Repository instance) =>
       'has_downloads': instance.hasDownloads,
       'has_wiki': instance.hasWiki,
       'has_pages': instance.hasPages,
-//      'parent': instance.parent,
-//      'license': instance.license,
-      'owner': instance.owner?.toJson,
+      'parent': instance.parent,
+      'license': instance.license,
+      'owner': instance.owner,
       'topics': instance.topics,
       'allIssueCount': instance.allIssueCount,
     };

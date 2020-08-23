@@ -34,6 +34,8 @@ import 'package:open_git/redux/app_state.dart';
 import 'package:open_git/route/fluro_util.dart';
 import 'package:open_git/route/navigator_util.dart';
 import 'package:open_git/status/status.dart';
+import 'package:open_git/ui/page/canvas_demo.dart';
+import 'package:open_git/ui/page/demo.dart';
 import 'package:open_git/ui/page/guide/guide_page.dart';
 import 'package:open_git/ui/page/guide/splash_page.dart';
 import 'package:open_git/ui/page/home/event_page.dart';
@@ -75,6 +77,18 @@ import 'package:open_git/ui/page/trending/trending_date_page.dart';
 import 'package:open_git/ui/page/trending/trending_language_page.dart';
 import 'package:open_git/ui/page/trending/trending_page.dart';
 import 'package:redux/redux.dart';
+
+var demoHandler = Handler(
+  handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+    return DemoPage();
+  }
+);
+
+var canvasDemoHandler = Handler(
+    handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+      return CanvasDemo();
+    }
+);
 
 var splashHandler = Handler(
     handlerFunc: (BuildContext context, Map<String, List<String>> params) {
