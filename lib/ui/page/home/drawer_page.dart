@@ -49,7 +49,7 @@ class _DrawerPageState extends State<DrawerPage> {
           UserAccountsDrawerHeader(
             accountName: Text(_userBean.name ?? _userBean.login ?? '',
                 style: YZStyle.normalTextWhite),
-            accountEmail: Text(_userBean.email, style: YZStyle.smallTextWhite),
+            accountEmail: Text(_userBean.email??'', style: YZStyle.smallTextWhite),
             currentAccountPicture: InkWell(
               //用户头像
               onTap: () {
